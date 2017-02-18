@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+
+	<display-name>QA_Pro</display-name>
+	<welcome-file-list>
+		<welcome-file>Index</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<description></description>
+		<display-name>InitializerServlet</display-name>
+		<servlet-name>InitializerServlet</servlet-name>
+		<servlet-class>com.qapro.util.InitializerServlet</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InitializerServlet</servlet-name>
+		<url-pattern>/InitializerServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- Index -->
+	<servlet>
+		<description></description>
+		<display-name>Index</display-name>
+		<servlet-name>Index</servlet-name>
+		<servlet-class>com.qapro.servlets.home.Index</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Index</servlet-name>
+		<url-pattern>/Index</url-pattern>
+	</servlet-mapping>
+	<!-- Index -->
+
+	<!-- Login -->
+	<servlet>
+		<description></description>
+		<display-name>Login</display-name>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.qapro.servlets.login.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+	<!-- Login -->
+
+	<!-- CheckLogin -->
+	<servlet>
+		<description></description>
+		<display-name>CheckLogin</display-name>
+		<servlet-name>CheckLogin</servlet-name>
+		<servlet-class>com.qapro.servlets.login.CheckLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CheckLogin</servlet-name>
+		<url-pattern>/CheckLogin</url-pattern>
+	</servlet-mapping>
+	<!-- CheckLogin -->
+
+	<!-- Logout -->
+	<servlet>
+		<description></description>
+		<display-name>Logout</display-name>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>com.qapro.servlets.login.Logout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/Logout</url-pattern>
+	</servlet-mapping>
+	<!-- Logout -->
+
+	<!-- AddQuestion -->
+	<servlet>
+		<description></description>
+		<display-name>AddQuestion</display-name>
+		<servlet-name>AddQuestion</servlet-name>
+		<servlet-class>com.qapro.servlets.question.AddQuestion</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddQuestion</servlet-name>
+		<url-pattern>/AddQuestion</url-pattern>
+	</servlet-mapping>
+	<!-- AddQuestion -->
+
+	<!-- EditQuestion -->
+	<servlet>
+		<description></description>
+		<display-name>EditQuestion</display-name>
+		<servlet-name>EditQuestion</servlet-name>
+		<servlet-class>com.qapro.servlets.question.EditQuestion</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditQuestion</servlet-name>
+		<url-pattern>/EditQuestion</url-pattern>
+	</servlet-mapping>
+	<!-- EditQuestion -->
+
+	<!-- DeleteQuestion -->
+	<servlet>
+		<description></description>
+		<display-name>DeleteQuestion</display-name>
+		<servlet-name>DeleteQuestion</servlet-name>
+		<servlet-class>com.qapro.servlets.question.DeleteQuestion</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteQuestion</servlet-name>
+		<url-pattern>/DeleteQuestion</url-pattern>
+	</servlet-mapping>
+	<!-- DeleteQuestion -->
+
+	<!-- DisplayQuestion -->
+	<servlet>
+		<description></description>
+		<display-name>DisplayQuestion</display-name>
+		<servlet-name>DisplayQuestion</servlet-name>
+		<servlet-class>com.qapro.servlets.question.DisplayQuestion</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DisplayQuestion</servlet-name>
+		<url-pattern>/DisplayQuestion</url-pattern>
+	</servlet-mapping>
+	<!-- DisplayQuestion -->
+
+	<!-- ListQuestion -->
+	<servlet>
+		<description></description>
+		<display-name>ListQuestion</display-name>
+		<servlet-name>ListQuestion</servlet-name>
+		<servlet-class>com.qapro.servlets.question.ListQuestion</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListQuestion</servlet-name>
+		<url-pattern>/ListQuestion</url-pattern>
+	</servlet-mapping>
+	<!-- ListQuestion -->
+
+	<!-- SaveQuestion -->
+	<servlet>
+		<description></description>
+		<display-name>SaveQuestion</display-name>
+		<servlet-name>SaveQuestion</servlet-name>
+		<servlet-class>com.qapro.servlets.question.SaveQuestion</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SaveQuestion</servlet-name>
+		<url-pattern>/SaveQuestion</url-pattern>
+	</servlet-mapping>
+	<!-- SaveQuestion -->
+
+	<!-- RegisterUser -->
+	<servlet>
+		<description></description>
+		<display-name>Register</display-name>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>com.qapro.servlets.registration.RegisterUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/Register</url-pattern>
+	</servlet-mapping>
+	<!-- RegisterUser -->
+
+	<!-- SaveUser -->
+	<servlet>
+		<description></description>
+		<display-name>SaveUser</display-name>
+		<servlet-name>SaveUser</servlet-name>
+		<servlet-class>com.qapro.servlets.registration.SaveUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SaveUser</servlet-name>
+		<url-pattern>/SaveUser</url-pattern>
+	</servlet-mapping>
+	<!-- SaveUser -->
+
+	<!-- AddAnswerServlet -->
+	<servlet>
+		<description></description>
+		<display-name>AddAnswer</display-name>
+		<servlet-name>AddAnswer</servlet-name>
+		<servlet-class>com.qapro.servlets.answer.AddAnswer</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddAnswer</servlet-name>
+		<url-pattern>/AddAnswer</url-pattern>
+	</servlet-mapping>
+	<!-- DisplayQuestionServlet -->
+
+	<!-- VotingQuestionServlet -->
+	<servlet>
+		<description></description>
+		<display-name>VotingQuestion</display-name>
+		<servlet-name>VotingQuestion</servlet-name>
+		<servlet-class>com.qapro.servlets.voting.VotingQuestion</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VotingQuestion</servlet-name>
+		<url-pattern>/VotingQuestion</url-pattern>
+	</servlet-mapping>
+	<!-- VotingQuestionServlet -->
+	
+	<filter>
+		<display-name>AuthenticationFilter</display-name>
+		<filter-name>AuthenticationFilter</filter-name>
+		<filter-class>com.qapro.filters.AuthenticationFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>AuthenticationFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+</web-app>

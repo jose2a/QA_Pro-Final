@@ -1,0 +1,47 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html,
+body {
+  height: 95%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 95%;
+  height: auto !important;
+  height: 95%;
+  /* Negative indent footer by its height */
+  margin-top: 50px;
+  /* Pad the bottom by footer height */
+  padding-top: 30px;
+}
+
+/* Set the fixed height of the footer here */
+footer {
+  height: 5%;
+  border-top: 1px solid #CCC;
+  padding-top: 10px;
+}
+
+.user_name{
+    font-size:14px;
+    font-weight: bold;
+}
+.comments-list .media{
+    border-bottom: 1px dotted #ccc;
+}
+
+.voteParagraph {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.error {
+	color: red;
+	margin: 0px 5px;
+}
